@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/blue_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:placeholderTextColor="@color/gray_outline"
+            app:boxStrokeColor="@color/gray_outline"
+            app:hintTextColor="@color/gray_outline"
+            android:paddingBottom="15dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            android:textColorHint="@color/gray_outline"
+            android:layout_marginTop="40dp"
+            android:theme="@style/CustomOutlineBox"
+
+            android:hint="@string/email"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailFieldID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_outline"
+                android:textColorHint="@color/gray_outline"
+                android:inputType="textEmailAddress"
+                app:boxStrokeColor="@color/gray_outline"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:placeholderTextColor="@color/gray_outline"
+            app:boxStrokeColor="@color/gray_outline"
+            app:hintTextColor="@color/gray_outline"
+            android:paddingBottom="15dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            android:textColorHint="@color/gray_outline"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/gray_outline"
+            android:layout_marginTop="20dp"
+            android:theme="@style/CustomOutlineBox"
+            android:hint="@string/password"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordFieldID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_outline"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray_outline"
+                android:textCursorDrawable="@drawable/text_cursor"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/babyBlue_button"
+            android:textColor="@color/blue_background"
+            android:text="@string/log_in"
+            app:cornerRadius="50dp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
